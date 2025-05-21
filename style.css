@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-    background-color: #333;
+    background-color: #004080;
     color: #fff;
     padding: 10px 0;
 }
@@ -24,22 +24,36 @@ body {
     align-items: center;
 }
 
-.logo {
-    width: 80px;
-    height: 80px;
-    font-size: 1.5em;
-    font-weight: bold;
+.header .logo {
+    display: flex;
+    align-items: center;
 }
 
-.menu ul {
+.header .logo img {
+    height: 80px;
+    margin-right: 10px;
+    magrit-bottom: 5px;
+}
+
+.header .logo .university-name {
+    font-size: 1.2em; 
+    line-height: 1.2;
+}
+
+.header .menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
 }
 
-.menu li {
+.header .menu li {
     margin-left: 20px;
+}
+
+.header .menu a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .menu a {
@@ -77,7 +91,7 @@ body {
 }
 
 .footer {
-    background-color: #333;
+    background-color: #004080;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -177,6 +191,40 @@ body {
      margin: 10px 0px; 
 }
 
+/* Стилі для таблиці контактної інформації */
+.container table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse; /* Об'єднує межі комірок */
+}
+
+.container th,
+.container td {
+    border: 1px solid #ddd; /* Сірі межі для комірок */
+    padding: 8px;
+    text-align: left;
+}
+
+.container th {
+    background-color: #f4f4f4; /* Світло-сірий фон для заголовків */
+    font-weight: bold;
+}
+
+.container td a {
+    color: #007bff; /* Синій колір для посилань (email) */
+    text-decoration: none;
+}
+
+.container td a:hover {
+    text-decoration: underline; /* Підкреслення при наведенні на посилання */
+}
+.part-title td {
+    background-color: #333;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #ddd;
+}
+
 /* Адаптивний дизайн (для мобільних пристроїв) */
 @media (max-width: 768px) {
     .container {
@@ -190,6 +238,11 @@ body {
 
     .logo {
         margin-bottom: 10px;
+        height: 50px;
+    }
+
+    .header .logo .university-name {
+        font-size: 0.9em;
     }
 
     .menu ul {
@@ -230,7 +283,10 @@ body {
         width: 6px;
         height: 6px;
         margin: 0 2px; 
-    }   
+    } 
+    .container table {
+        margin-top: 5px; 
+    } 
 }
 
 @media (min-width: 827px) {
