@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Навчальні відділи Національного університету "Полтавська політехніка ім. Юрія Кондратюка"</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <img src="logo.jpg" alt="Логотип Полтавської політехніки">
+            <div class="university-name">
+                Національний університет<br>
+                "Полтавська політехніка ім. Юрія Кондратюка"
+            </div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="about.html">Про університет</a></li>
+                <li><a href="gallery.html">Галерея картинок</a></li>
+                <li><a href="#">Новини</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <div class="slider-container">
+     <div class="slider-wrapper">
+        <div class="slider">
+            <img src="slide1.jpg" class="slider-img" alt="Зображення 1">
+            <img src="slide2.jpg" class="slider-img" alt="Зображення 2">
+            <img src="slide3.jpg" class="slider-img" alt="Зображення 3">
+            <img src="slide4.jpg" class="slider-img" alt="Зображення 4">
+            <img src="slide5.jpg" class="slider-img" alt="Зображення 5">
+        </div>
+        
+        <button class="slider-btn prev">◁</button>
+        <button class="slider-btn next">▷</button>
+        
+        <div class="slider-dots">
+            <div class="dot active" data-index="0"></div>
+            <div class="dot" data-index="1"></div>
+            <div class="dot" data-index="2"></div>
+            <div class="dot" data-index="3"></div>
+            <div class="dot" data-index="4"></div>
+        </div>
+     </div>
+    </div>
+<div class="container">
+    <h2>Навчальні відділи Національного університету "Полтавська політехніка ім. Юрія Кондратюка"</h2>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Відділ</th>
+                <th>ПІП</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Приймальня ректора</td>
+                <td>Ректор - ОНІЩЕНКО Володимир Олександрович</td>
+            </tr>
+            <tr>
+                <td rowspan="6">Приймальня проректорів</td>
+            </tr>
+            <tr>
+                <td>Проректор з науково-педагогічної роботи КОРОБКО Богдан Олегович</td>
+            </tr>
+            <tr>
+                <td>Перший проректор – проректор з науково-педагогічної роботи ФІЛОНИЧ Олена Миколаївна</td>
+            </tr>
+            <tr>
+                <td>Виконувач обов’язків проректора з наукової роботи Степова Олена Валеріївна</td>
+            </tr>
+            <tr>
+                <td>Проректор з науково-педагогічної роботи МАРТИНЕНКО Анатолій Михайлович</td>
+            </tr>
+            <tr>
+                <td>Проректор з науково-педагогічної роботи ЗАМАХІН Андрій Леонідович</td>
+            </tr>
+            <tr>
+                <td>Навчально-науковий інститут фінансів, економіки, управління та права</td>
+                <td>Директор Онищенко Світлана Володимирівна</td>
+            </tr>
+            <tr>
+                <td>Навчально-науковий інститут архітектури, будівництва та землеустрою</td>
+                <td>Директор Вадімов Вадім Митрофанович</td>
+            </tr>
+            <tr>
+                <td>Навчально-науковий інститут нафти і газу</td>
+                <td>В.о. директора Гаврик Сергій Юрійович</td>
+            </tr>
+            <tr>
+                <td>Навчально-науковий інститут інформаційних технологій та робототехніки</td>
+                <td>Директор Пенц Володимир Федорович</td>
+            </tr>
+            <tr>
+                <td>Факультет філології, психології та педагогіки</td>
+                <td>Декан Агейчева Анна Олександрівна</td>
+            </tr>
+            <tr>
+                <td>Факультет фізичної культури та спорту</td>
+                <td>Декан Рибалко Ліна Миколаївна</td>
+            </tr>
+            <tr>
+                <td>Кафедра військової підготовка</td>
+                <td>В.о. завідувача кафедри Бороздін Микола Кирилович</td>
+            </tr>
+            <tr>
+                <td>Профком студентів та аспірантів</td>
+                <td>Голова Дроботя Олександр Васильович</td>
+            </tr>
+            <tr>
+                <td>Студентський парламент</td>
+                <td>Президент Левченко Валерій Григорович</td>
+            </tr>
+            <tr>
+                <td>Департаменту безпеки університету</td>
+                <td>Директор Бєлянський Олександр Миколайович</td>
+            </tr>
+            <tr>
+                <td>Відділ документообігу та контролю</td>
+                <td>Начальник Козинець Олена Віталіївна</td>
+            </tr>
+            <tr>
+                <td>Відділ кадрів</td>
+                <td>Начальник Єфімов Олександр Олександрович</td>
+            </tr>
+            <tr>
+                <td>Юридична служба</td>
+                <td>Провідний юрисконсульт Дубинка Олена Вікторівна</td>
+            </tr>
+            <tr>
+                <td>Приймальна комісія</td>
+                <td>Ревенко Світлана Іванівна</td>
+            </tr>
+            <tr>
+                <td>Деканат по роботі з іноземними студентами</td>
+                <td>Начальник Вірченко Віктор Вікторович</td>
+            </tr>
+            <tr>
+                <td>Відділ аналізу інноваційної діяльності та інтелектуальної власності університету</td>
+                <td>Начальник Максюта Наталія Сергіївна</td>
+            </tr>
+            <tr>
+                <td>Відділ аспірантури</td>
+                <td>Методист Гах Ніна Василівна</td>
+            </tr>
+            <tr>
+                <td>Департамент організації навчального процесу, акредитації та ліцензування</td>
+                <td>Директор Максименко Олег Сергійович</td>
+            </tr>
+            <tr>
+                <td>Головний бухгалтер</td>
+                <td>Бережна Алла Юріївна</td>
+            </tr>
+            <tr>
+                <td>Заступник головного бухгалтера з питань бухгалтерського обліку і звітності</td>
+                <td>Кіуліна Світлана Іванівна</td>
+            </tr>
+            <tr>
+                <td>Заступник головного бухгалтера з питань економіки та  фінансування</td>
+                <td>Яременко Валентина Володимирівна</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    <main class="main-content">
+        <div class="container">
+            <h2>Головні новини</h2>
+            <div class="news-list">
+                <div class="news-item">
+                    <h3>1 місце серед ЗВО Полтави</h3>
+                    <p>Полтавська політехніка – науковий лідер Полтавщини за версією рейтингу Scopus 2025!</p>
+                    <a href="https://nupp.edu.ua/news/poltavska-politekhnika-naukoviy-lider-poltavshchini-za-versieyu-reytingu-scopus-2025.html">Читати далі</a>
+                </div>
+                <div class="news-item">
+                    <h3>Запрошуємо на Наукову Весну «Science Day – 2025» у Полтавській політехніці!</h3>
+                    <p>22 травня об 11:30 Національний університет «Полтавська політехніка імені Юрія Кондратюка» запрошує всіх охочих на захопливу подію – Наукову Весну «Science Day–2025»!</p>
+                    <a href="https://nupp.edu.ua/news/zaproshuemo-na-naukovu-vesnu-science-day-2025-u-poltavskiy-politekhnitsi.html">Читати далі</a>
+                </div>
+                <div class="news-item">
+                    <h3>Інтерактивний «День спільнодії: СенсоТека. Ти як?»</h3>
+                    <p>У Полтавській політехніці відбувся масштабний інтерактивний захід «День спільнодії: Сенсотека. Ти як?», проведений у межах Місяця обізнаності про ментальне здоров’я.</p>
+                    <a href="https://nupp.edu.ua/news/interaktivniy-den-spilnodii-sensoteka-ti-yak-u-poltavskiy-politekhnitsi-fokus-na-mentalne-zdorovya.html">Читати далі</a>
+                </div>
+                <div class="news-item">
+                    <h3>Науковиця політехніки взяла участь у заході на тему академічної мобільності у STEM-галузях вищої освіти</h3>
+                    <p>У Відні відбувся міжнародний захід Promoting Erasmus+ Mobilities in STEM in Higher Education, який об’єднав понад 200 представників ЗВО з усієї Європи.</p>
+                    <a href="https://nupp.edu.ua/news/naukovitsya-politekhniki-vzyala-uchast-u-akademichnoi-mobilnosti-u-stem-galuzyakh-vishchoi-osviti.html">Читати далі</a>
+                </div>
+                <div class="news-item">
+                    <h3>Старший геолог компанії SLB Анастасія Шибецька розповіла членам студентського відділення SPE Полтавської політехніки про роботу геолога в сервісній компанії</h3>
+                    <p>Для членів SPE Полтавської політехніки відбулася мотиваційно-технічна зустріч з Анастасією Шибецькою — секретарем центральноукраїнської секції SPE та досвідченим геологом.</p>
+                    <a href="https://nupp.edu.ua/news/geolog-kompanii-slb-anastasiya-shibetska-rozpovila-spe-pro-robotu-geologa-v-servisniy-kompanii.html">Читати далі</a>
+                </div>
+                <div class="news-item">
+                    <h3>Полтавська політехніка – майданчик міжнародного діалогу з питань економічної безпеки</h3>
+                    <p>У Полтавській політехніці відбулася ІХ Міжнародна науково-практична конференція «Економічна безпека: держава, регіон, підприємство», яка, зібравши понад 100 учасників.</p>
+                    <a href="https://nupp.edu.ua/news/poltavska-politekhnika-maydanchik-mizhnarodnogo-dialogu-z-pitan-yekonomichnoi-bezpeki.html">Читати далі</a>
+                </div>
+                <div class="news-item">
+                    <h3>Полтавська політехніка об’єднала науковців, освітян і будівельників задля розвитку будівельної галузі</h3>
+                    <p>У Полтавській політехніці за ініціативи керівника Полтавського територіального відділення Академії будівництва України відбулося спільне засідання із президією Академії будівництва України та науково-педагогічними працівниками ННІ будівництва, архітектури та землеустрою.</p>
+                    <a href="https://nupp.edu.ua/news/poltavska-politekhnika-obednala-naukovtsiv-osvityan-i-budivelnikiv-zadlya-rozvitku-budivelnoi-galuzi.html">Читати далі</a>
+                </div>
+                <div class="news-item">
+                    <h3>Стратегічне партнерство задля відбудови України</h3>
+                    <p>У Полтавській політехніці відбулося розширене засідання Полтавського відділення АБУ. Кульмінацією стало підписання Меморандуму про стратегічне співробітництво між Конфедерацією будівельників України та університетом для посилення партнерства між освітою, наукою та бізнесом у будівельній галузі.</p>
+                    <a href="https://nupp.edu.ua/news/strategichne-partnerstvo-zadlya-vidbudovi-ukraini-pidpisannya-memorandumu-mizh-kbu-ta-politekhnikoyu.html">Читати далі</a>
+                </div>
+                <div class="news-item">
+                    <h3>Студенти Полтавської політехніки активно долучаються до ініціатив Європейського Союзу за програмою Erasmus+</h3>
+                    <p>Студентка політехніки Єлизавета Дубинка взяла участь у молодіжному обміні за програмою Erasmus+ “Unity through Art and Culture” у Нідерландах, де вивчала підтримку ідей єдності, інклюзії та боротьби з дискримінацією через мистецтво та культуру.</p>
+                    <a href="https://nupp.edu.ua/news/studenti-politekhniki-doluchayutsya-do-initsiativ-evropeyskogo-soyuzu-za-programoyu-erasmus.html">Читати далі</a>
+                </div>
+                <div class="news-item">
+                    <h3>Роль вихователя як амбасадора науки для дитини</h3>
+                    <p>Кафедра психології та педагогіки Полтавської політехніки спільно з Харківською гуманітарно-педагогічною академією провели круглий стіл «Вихователь як амбасадор науки для дитини».</p>
+                    <a href="https://nupp.edu.ua/news/u-politekhnitsi-pid-chas-kruglogo-stolu-obgovorili-rol-vikhovatelya-yak-ambasadora-nauki-dlya-ditini.html">Читати далі</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Інформаційний портал</p>
+            <nav class="footer-menu">
+                <ul>
+                    <li><a href="privacy.html">Політика конфіденційності</a></li>
+                    <li><a href="terms.html">Умови використання</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
