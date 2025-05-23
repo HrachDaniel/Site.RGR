@@ -225,6 +225,173 @@ body {
     border: 1px solid #ddd;
 }
 
+/* Стилі для хлібних крихт */
+.breadcrumbs {
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.breadcrumbs a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+/* Стилі для галереї картинок */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 3 колонки на великих екранах, адаптивні */
+    gap: 20px; /* Відстань між зображеннями */
+    margin-top: 20px;
+}
+
+.gallery-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden; /* Обрізає все, що виходить за межі елемента */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px); /* Ефект підняття при наведенні */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px; /* Фіксована висота для зображень галереї */
+    object-fit: cover; /* Зображення заповнює контейнер, обрізаючи зайве */
+    display: block; /* Усуває зайві відступи під зображенням */
+}
+
+/* Стилі для сітки новин */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Адаптивна сітка, 3 колонки на великих екранах */
+    gap: 20px; /* Відстань між картками новин */
+    margin-top: 20px;
+}
+
+.news-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Контент картки розміщується вертикально */
+    transition: transform 0.2s ease-in-out;
+    background-color: #fff;
+}
+
+.news-card:hover {
+    transform: translateY(-5px); /* Ефект підняття при наведенні */
+}
+
+.news-card img {
+    width: 100%;
+    height: 180px; /* Фіксована висота зображень новин */
+    object-fit: cover; /* Зображення заповнює контейнер, обрізаючи зайве */
+    display: block;
+}
+
+.news-card-body {
+    padding: 15px;
+    flex-grow: 1; /* Дозволяє body займати весь доступний простір */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Розміщує елементи рівномірно */
+}
+
+.news-card .news-category {
+    font-size: 0.85em;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.news-card .news-title {
+    font-size: 1.1em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    color: #333;
+    font-weight: 600;
+}
+
+.news-card .news-date {
+    font-size: 0.8em;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.news-card .read-more {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    align-self: flex-start; /* Вирівнює кнопку вліво */
+    margin-top: auto; /* Відштовхує кнопку вниз, якщо вміст різної висоти */
+}
+
+.news-card .read-more:hover {
+    background-color: #0056b3;
+}
+
+.about-university {
+    margin-top: 20px;
+}
+
+.university-video-placeholder {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Обмежте ширину, як на зразку */
+    margin: 0 auto 30px auto; /* Центруйте і додайте відступ знизу */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.university-video-placeholder img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Напівпрозорий чорний фон */
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-sizing: border-box; /* Враховуємо padding у ширині */
+}
+
+.video-overlay .overlay-text {
+    line-height: 1.3;
+}
+
+.about-university p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.about-university p strong {
+    color: #000;
+}
+
+
 /* Адаптивний дизайн (для мобільних пристроїв) */
 @media (max-width: 768px) {
     .container {
@@ -287,6 +454,41 @@ body {
     .container table {
         margin-top: 5px; 
     } 
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Менше колонок на мобільних */
+        gap: 15px;
+    }
+
+    .gallery-item img {
+        height: 180px; /* Менша висота зображень на мобільних */
+    }
+
+    .news-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Менше колонок на мобільних */
+        gap: 15px;
+    }
+
+    .news-card img {
+        height: 160px;
+    }
+
+    .news-card .news-title {
+        font-size: 1em;
+    }
+
+    .university-video-placeholder {
+        margin-bottom: 20px;
+    }
+
+    .video-overlay {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+
+    .about-university p {
+        font-size: 1em;
+        line-height: 1.5;
+    }
 }
 
 @media (min-width: 827px) {
