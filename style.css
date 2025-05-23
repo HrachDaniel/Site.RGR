@@ -79,6 +79,10 @@ body {
     border-radius: 5px;
 }
 
+.news-item:hover {
+    transform: translateY(-5px); /* Ефект підняття при наведенні */
+}
+
 .news-item h3 {
     margin-top: 0;
 }
