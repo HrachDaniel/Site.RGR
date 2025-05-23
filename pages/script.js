@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Запуск автоматичної зміни слайдів
     function startAutoSlide() {
-        slideInterval = setInterval(nextSlide, 4000);
+        slideInterval = setInterval(nextSlide, 3000);
     }
 
     // Скидання таймера автоматичної зміни
