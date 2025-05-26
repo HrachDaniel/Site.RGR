@@ -432,7 +432,47 @@ body {
 .hamburger-menu.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg); /* Третя смужка перетворюється на частину X */
 }
+.static-content {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    line-height: 1.7; /* Для кращої читабельності тексту */
+    color: #333;
+}
 
+.static-content h1,
+.static-content h2,
+.static-content h3 {
+    color: #004080; /* Колір заголовків */
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.static-content h1 {
+    font-size: 2em;
+}
+
+.static-content h2 {
+    font-size: 1.5em;
+    border-bottom: 1px solid #eee; /* Роздільник під заголовками */
+    padding-bottom: 5px;
+}
+
+.static-content p {
+    margin-bottom: 15px;
+}
+
+.static-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.static-content ul li {
+    margin-bottom: 5px;
+}
 
 /* Адаптивний дизайн (для мобільних пристроїв) */
 @media (max-width: 768px) {
@@ -590,6 +630,18 @@ body {
 
     .header .menu li a:hover {
         background-color: #007bff;
+    }
+    .static-content {
+        padding: 15px;
+        line-height: 1.6;
+    }
+
+    .static-content h1 {
+        font-size: 1.8em;
+    }
+
+    .static-content h2 {
+        font-size: 1.3em;
     }
 }
 
