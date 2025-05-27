@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Отримуємо елементи DOM
     const slider = document.querySelector('.slider');
     const slides = document.querySelectorAll('.slider-img');
     const prevBtn = document.querySelector('.prev');
@@ -10,26 +9,22 @@ document.addEventListener('DOMContentLoaded', function() {
     const slideCount = slides.length;
     let slideInterval;
 
-    // Ініціалізація слайдера
     function initSlider() {
-        updateSliderPosition(); // Початкове розташування слайда
+        updateSliderPosition(); 
         updateDots();
         startAutoSlide();
     }
 
-    // Оновлення позиції слайдера
     function updateSliderPosition() {
         slider.style.transform = 'translateX(-' + (currentSlide * 100) + '%)';
     }
 
-    // Перехід до конкретного слайду
     function goToSlide(slideIndex) {
         currentSlide = slideIndex;
         updateSliderPosition();
         updateDots();
     }
 
-    // Перехід до наступного слайду
     function nextSlide() {
         if (currentSlide === slideCount - 1) {
             goToSlide(0);
@@ -38,7 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Перехід до попереднього слайду
     function prevSlide() {
         if (currentSlide === 0) {
             goToSlide(slideCount - 1);
@@ -47,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Оновлення індикаторів (крапок)
     function updateDots() {
         dots.forEach(function(dot, index) {
             if (index === currentSlide) {
@@ -58,18 +51,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Запуск автоматичної зміни слайдів
     function startAutoSlide() {
         slideInterval = setInterval(nextSlide, 4000);
     }
 
-    // Скидання таймера автоматичної зміни
     function resetAutoSlide() {
         clearInterval(slideInterval);
         startAutoSlide();
     }
 
-    // Обробники подій
     nextBtn.addEventListener('click', function() {
         nextSlide();
         resetAutoSlide();
@@ -88,17 +78,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Зупинка автоматичної зміни при наведенні
     slider.addEventListener('mouseenter', function() {
         clearInterval(slideInterval);
     });
 
-    // Відновлення автоматичної зміни
     slider.addEventListener('mouseleave', function() {
         startAutoSlide();
     });
 
-    // Ініціалізація слайдера
     initSlider();
 
 
