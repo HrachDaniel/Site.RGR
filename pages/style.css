@@ -203,7 +203,7 @@ body {
     width: 100%;
     margin-top: 20px;
     border-collapse: collapse; /* Об'єднує межі комірок */
-    overflow: auto;
+    overflow: scroll;
 }
 
 .container th,
@@ -541,7 +541,8 @@ body {
         margin: 0 2px; 
     } 
     .container table {
-        margin-top: 5px; 
+        margin-top: 5px;
+        overflow: auto;
     } 
     .gallery-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
