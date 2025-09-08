@@ -203,6 +203,7 @@ body {
     width: 100%;
     margin-top: 20px;
     border-collapse: collapse; /* Об'єднує межі комірок */
+    overflow: auto;
 }
 
 .container th,
