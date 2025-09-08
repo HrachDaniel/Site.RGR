@@ -515,6 +515,7 @@ body {
     .footer .container {
         flex-direction: column;
         align-items: center;
+        overflow: auto;
     }
 
     .footer-menu ul {
